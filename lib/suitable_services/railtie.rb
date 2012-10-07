@@ -1,7 +1,7 @@
 module SuitableServices 
   class SuitableServicesRailtie < Rails::Railtie
 		initializer 'suitable_services_railtie.configure_rails_initialization' do
-			Base.send :include, ActionControllerMethods
+			::SuitableServices::Base.send :include, ::SuitableServices::ActionControllerMethods
 		end
 	end
 end
