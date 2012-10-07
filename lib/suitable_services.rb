@@ -1,4 +1,5 @@
 require "suitable_services/version"
+require 'suitable_services/railtie'
 
 module SuitableServices
 	autoload :Base, 'suitable_services/base'
