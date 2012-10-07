@@ -4,8 +4,8 @@ require File.expand_path('../lib/suitable_services/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Dan Carper"]
   gem.email         = ["dcarper@4moms.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Simple service objects that encourage OOA}
+  gem.summary       = %q{}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
