@@ -1,6 +1,6 @@
 module SuitableServices 
-  class Railtie < Rails::Railtie
-		initialize 'suitable_services.configure_rails_initialization' do
+  class SuitableServicesRailtie < Rails::Railtie
+		initializer 'suitable_services_railtie.configure_rails_initialization' do
 			Base.include ActionControllerMethods
 		end
 	end
