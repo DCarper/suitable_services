@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe SuitableServices::ActionControllerMethods do
 
-	subject { Object.new; Object.extend SuitableServices::ActionControllerMethods }
+  subject { Object.new; Object.extend SuitableServices::ActionControllerMethods }
 
   describe '#controller' do
     it 'should return the controller from the options' do

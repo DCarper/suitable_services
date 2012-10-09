@@ -1,11 +1,11 @@
 module SuitableServices
-	module ActionControllerMethods
-		def controller
-			options[:controller]
-		end
+  module ActionControllerMethods
+    def controller
+      options[:controller]
+    end
 
-		def params
-			controller.request.params
-		end
-	end
+    def params
+      controller.request.params
+    end
+  end
 end
