@@ -1,5 +1,8 @@
 require "suitable_services/version"
-require 'suitable_services/railtie'
+
+if defined? Rails
+	require 'suitable_services/railtie'
+end
 
 module SuitableServices
 	autoload :Base, 'suitable_services/base'
