@@ -1,19 +1,19 @@
 module SuitableServices
-	class Base
-		def self.invoke(options = {})
-			self.new(options).execute!
-		end
+  class Base
+    def self.invoke(options = {})
+      self.new(options).execute!
+    end
 
-		def initialize(options = {})
-			@options = options
-		end
+    def initialize(options = {})
+      @options = options
+    end
 
-		def execute!
-			raise NoMethodError, "#{self.class}#execute! is undefined"
-		end
+    def execute!
+      raise NoMethodError, "#{self.class}#execute! is undefined"
+    end
 
-		private
+    private
 
-		attr_accessor :options
-	end
+    attr_accessor :options
+  end
 end

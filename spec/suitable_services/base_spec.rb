@@ -10,17 +10,17 @@ describe SuitableServices::Base do
     end
   end
 
-	describe '#initialize' do
-		subject { SuitableServices::Base }
-		it 'should accept some options' do
-			service = subject.new(:options)
-			service.send(:options).should == :options
-		end
-	end
+  describe '#initialize' do
+    subject { SuitableServices::Base }
+    it 'should accept some options' do
+      service = subject.new(:options)
+      service.send(:options).should == :options
+    end
+  end
 
-	describe '#execute!' do
-		it 'should raise a MethodMissing error' do
-			lambda { subject.execute! }.should raise_error(NoMethodError)
-		end
-	end
+  describe '#execute!' do
+    it 'should raise a MethodMissing error' do
+      lambda { subject.execute! }.should raise_error(NoMethodError)
+    end
+  end
 end
